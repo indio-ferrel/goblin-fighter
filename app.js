@@ -9,7 +9,7 @@ const playerImg = document.querySelector('#player-img');
 
 // let state
 let defeatedCount = 0;
-let conquerorHP = 5;
+let heroHP = 5;
 let goblins = [
     { name: 'Snobgoblin', hp: 1 },
     { name: 'Treasure Goblin', hp: 2 },
@@ -38,7 +38,7 @@ form.addEventListener('submit', (e) => {
 function goblinClickHandler(goblin) {
     console.log(`I am clicking on ${goblin.name}`);
     if (goblin.hp === 0) return;
-    if (conquerorHP === 0) return;
+    if (heroHP === 0) return;
 
     const playerHit = Math.random();
     if (playerHit >= 0.5) {
@@ -55,13 +55,13 @@ function goblinClickHandler(goblin) {
     }
     const goblinHit = Math.random();
     if (goblinHit >= 0.5) {
-        conquerorHP--;
+        heroHP--;
         
-        playerHP.textContent = conquerorHP;
+        playerHP.textContent = herorHP;
         alert (`${goblin.name} hit you!`);
 
-        if (conquerorHP === 0) {
-            alert('Your conqueror fainted!  You black out and wake up at the nearest Pokemon Center (not the most recent one)!')
+        if (heroHP === 0) {
+            alert('Your character fainted!  You black out and wake up at the nearest Pokemon Center (not the most recent one)!')
             playerImg.classList.add('ded');
         }
     } else {
@@ -69,6 +69,4 @@ function goblinClickHandler(goblin) {
     }
 }
 
-// "call functions at end" sounds a little dumb but is at least
-// an imperfectly phrased part of a legit organizational policy
 displayGoblins();

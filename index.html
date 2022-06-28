@@ -9,22 +9,22 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Everybody Was Goblin Fighting</title>
+    <title>Fightin' Gobs!</title>
 </head>
 
 <body>
     <header>
-        <div class="gutter-right logo">
+        <!-- <div class="gutter-right logo">
             <img src="./assets/big-logo.png" />
-        </div>
+        </div> -->
     </header>
     <main>
-        <div class="conqueror-container" id="conqueror-container">
+        <div class="hero-container" id="hero-container">
             <div class="slain-enemies">
                 <p>You have defeated <span id="defeated-count">0</span> goblins.</p>
                 <div class="defeated-list"></div>
             </div>
-            <div class="conqueror">
+            <div class="hero">
                 <p>Horsepower: <span id="player-hp">5</span></p>
             </div>
         </div>
@@ -33,7 +33,7 @@
                 <form>
                     <img id="goblin-img" src="./assets/goblin.png"/>
                     <input name="goblin-name">
-                    <button>Fight Goblin</button>
+                    <button>Add Goblin</button>
                 </form>
                 <div class="goblin-list">
                     <div class="goblin-instance">
@@ -51,12 +51,27 @@
                         <p id="goblin-face-3">😈</p>
                         <p id="goblin-hp-3">5</p>
                     </div>
+                    <div class="goblin-instance">
+                        <p>Gobby</p>
+                        <p id="goblin-face-3">😈</p>
+                        <p id="goblin-hp-3">5</p>
+                    </div>
+                    <div class="goblin-instance">
+                        <p>Gobby Monster</p>
+                        <p id="goblin-face-3">😈</p>
+                        <p id="goblin-hp-3">5</p>
+                    </div>
+                    <div class="goblin-instance">
+                        <p>Blumpsey Blumpkin</p>
+                        <p id="goblin-face-3">😈</p>
+                        <p id="goblin-hp-3">5</p>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
     <footer>
-        <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
+        <div class="copy gutter-right">&copy; 2022 Inspiring Software Developer</div>
     </footer>
 
     <script type="module" src="./app.js"></script>

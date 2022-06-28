@@ -1,1 +1,119 @@
-/* add home page styles here */
+header {
+    background-color: darkslategrey;
+    display: none;
+}
+
+body {
+    background-color: black;
+    color: darkslateblue;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+}
+
+#hero-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* flex-flow: column nowrap; */
+    justify-content: flex-start; /* flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe; */
+    gap: normal normal;
+}
+
+#goblin-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* flex-flow: column nowrap; */
+    justify-content: flex-start; /* flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe; */
+    gap: normal normal;
+}
+
+input {
+    background-color: #434343;
+    color: darksalmon;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    background-color: #434343;
+    color: darksalmon;
+}
+
+footer {
+    background-color: rgb(1, 32, 32);
+    color: rgb(135, 135, 13);
+}
+
+/* GhostSolo
+    html:root {
+        --accent-color: #543fd7;
+        --bs-font-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        --bs-font-serif: Georgia, serif;
+        --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    html[data-theme='light'] {
+        --background-color: #fff;
+        --alternate-background-colour: #f7f7f9;
+        --text-color: #121416d8;
+        --text-color-light: #777676bb;
+        --link-color: var(--accent-color);
+        --masthead-color: var(--accent-color);
+        --masthead-text: #fff;
+        --button-color: #263238;
+        --button-text: #fff;
+    }
+
+    html[data-theme='dark'] {
+        --background-color: #212a2e;
+        --alternate-background-colour: #263238;
+        --text-color: #F7F8F8;
+        --text-color-light: #8A8F98;
+        --link-color: #828fff;
+        --masthead-color: #212a2e;
+        --masthead-text: #fff;
+        --button-color: var(--accent-color);
+        --button-text: #fff;
+    } */
+
+    /* simpler
+    :root {
+        --background-color: #fff;
+        --text-color: #121416d8;
+        --link-color: #543fd7;
+    }
+
+    html[data-theme='light'] {
+        --background-color: #fff;
+        --text-color: #121416d8;
+        --link-color: #543fd7;
+    }
+
+    html[data-theme='dark'] {
+        --background-color: #212a2e;
+        --text-color: #F7F8F8;
+        --link-color: #828fff;
+    }
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --body-bg: #FFFFFF;
+        --body-color: #000000;
+    }
+ }
+ 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --body-bg: #000000;
+        --body-color: #FFFFFF;
+    }
+ }  */
